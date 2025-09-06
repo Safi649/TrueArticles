@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { db } from "../../lib/firebase";
 import { collection, addDoc, serverTimestamp } from "firebase/firestore";
-import { useAuth } from "../../context/AuthContext";
+import { useAuth } from "../../utils/AuthContext";
 import { useRouter } from "next/router";
 import dynamic from "next/dynamic";
 
