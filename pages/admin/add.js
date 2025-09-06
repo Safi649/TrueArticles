@@ -2,8 +2,8 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
-import { db } from "@/firebase";
-import { useAuth } from "@/utils/AuthContext";
+import { db, auth } from "../../firebase";
+import { useAuth } from "../../utils/AuthContext";
 
 export default function AdminAddArticle() {
   const { user, loading } = useAuth();
